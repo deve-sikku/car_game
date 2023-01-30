@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.mainDiv {
+    background: rgb(117, 203, 62);
+    background: linear-gradient(277deg, rgba(117, 203, 62, 1) 29%, rgba(61, 178, 75, 1) 96%);
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
+.enemy {
+    width: 50px;
+    height: 90px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url('image/enemyCar.png');
+    background-size: 100% 100%;
+}
+
+.car {
+    width: 50px;
+    height: 90px;
+    position: absolute;
+    background-repeat: no-repeat;
+    bottom: 120px;
+    background-image: url('image/palyerCar.png');
+    background-size: 100% 100%;
+}
+
+.treeleft {
+    width: 80px;
+    height: 90px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url('image/tree3.png');
+    background-size: 100% 100%;
+}
+
+.treeRight {
+    width: 80px;
+    height: 90px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url('image/tree5.png');
+    background-size: 100% 100%;
+}
+
+.gameArea {
+    width: 400px;
+    height: 102vh;
+    background-color: #2d3436;
+    position: relative;
+    margin: auto;
+    border-left: 5px dashed #fff;
+    border-right: 5px dashed #fff;
+}
+
+
+.line {
+    width: 10px;
+    height: 98px;
+    background-color: #fff;
+    margin-left: 195px;
+    position: absolute;
+}
+
+.score {
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    background-image: url('image/Scoreborder.png');
+    background-size: 100% 100%;
+    background-color: #10ac84;
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 300px;
+    line-height: 70px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5em;
+    box-shadow: 0 5px 5px #777;
+    z-index: 12;
+}
+
+.startScreen {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    background-color: black;
+    background-image: url('image/overlay.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-weight: 100;
+    color: #fff;
+    z-index: 1;
+    padding: 30px;
+    margin: auto;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.1rem;
+    word-spacing: 3;
+    letter-spacing: 8;
+    line-height: 30px;
+    text-transform: uppercase;
+    box-shadow: 0 5px 5px #777;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.sideRight,
+.sideLeft {
+    width: 300px;
+    height: 102vh;
+}
